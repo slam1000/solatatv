@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SOLARA TV Movies | 60,000+ Movies & Series - Best IPTV Movie Library 2026</title>
-  <meta name="description" content="SOLARA TV offers 60,000+ movies & series in stunning Ultra HD quality. Watch Hollywood blockbusters, European cinema, Australian films, Arabic movies & more. Free trial available for UK, Netherlands, Germany, France, Australia, USA, Canada & GCC.">
-  <meta name="keywords" content="SOLARA TV movies, IPTV movies, watch movies online, IPTV movie library, Hollywood movies on IPTV, European cinema, Australian films, Arabic movies, best IPTV for movies 2026, IPTV UK movies, IPTV Netherlands films, IPTV Germany movies, IPTV France cinema, IPTV Australia films, IPTV USA movies, IPTV Canada movies, IPTV GCC films, IPTV UAE movies">
+  <title>SOLARA TV Movies | 60,000+ 4K Movies & Series - Best IPTV Movie Library Europe 2026</title>
+  <meta name="description" content="SOLARA TV offers 60,000+ movies & series in stunning 4K Ultra HD quality. Watch Hollywood blockbusters, European cinema, UK films, Dutch movies, German cinema, French films, Italian movies, Spanish films, Australian cinema & Arabic movies. Free trial available.">
+  <meta name="keywords" content="SOLARA TV movies, IPTV movies Europe 2026, 4K IPTV movies, iptv films nederland, iptv uk movies, iptv deutschland filme, iptv france films français, iptv italy film italiani, iptv spain películas español, iptv australia movies, best iptv for movies europe, multilingual iptv movies, expat iptv movies europe">
   <meta name="author" content="SOLARA TV">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.solaratv.tv/movies">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="SOLARA TV Movies | 60,000+ Movies & Series">
-  <meta property="og:description" content="Watch 60,000+ movies with SOLARA TV. Hollywood, European, Australian & Arabic cinema. Free trial.">
+  <meta property="og:title" content="SOLARA TV Movies | 60,000+ 4K Movies & Series - Europe's Premier IPTV Movie Library">
+  <meta property="og:description" content="Stream 60,000+ blockbuster IPTV movies across Europe in 4K & HD with multilingual audio. Instant activation, European-optimized servers.">
   <meta property="og:image" content="https://image.tmdb.org/t/p/original/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
@@ -75,6 +75,11 @@
     .movie-info h3 { font-size: 1rem; margin-bottom: 5px; color: var(--accent-gold); }
     .movie-category { font-size: 0.7rem; color: #aaa; margin-bottom: 8px; }
     .movie-info p { font-size: 0.8rem; color: #ccc; line-height: 1.4; }
+    .stats-banner { background: linear-gradient(135deg, #111111, #1A1A1A); border-radius: 20px; padding: 30px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,215,0,0.3); }
+    .stats-banner h3 { color: var(--accent-gold); font-size: 1.5rem; margin-bottom: 20px; }
+    .stats-items { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+    .stat-item { text-align: center; }
+    .stat-number { font-size: 2rem; font-weight: bold; color: var(--accent-gold); }
     .country-packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin: 40px 0; }
     .country-card { background: #111111; border-radius: 20px; padding: 25px; border: 1px solid rgba(255,215,0,0.3); transition: all 0.3s; }
     .country-card:hover { transform: translateY(-5px); border-color: var(--accent-gold); }
@@ -82,15 +87,22 @@
     .country-card ul { list-style: none; margin: 15px 0; }
     .country-card li { margin: 8px 0; display: flex; align-items: center; gap: 10px; color: #ccc; font-size: 0.85rem; }
     .country-card li i { color: var(--accent-gold); width: 20px; }
-    .country-badge { display: inline-block; background: rgba(255,215,0,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.7rem; margin-top: 10px; }
-    .category-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
-    .category-card { background: #111111; border-radius: 20px; padding: 25px; text-align: center; border: 1px solid rgba(255,215,0,0.3); transition: all 0.3s; }
-    .category-card:hover { transform: translateY(-5px); border-color: var(--accent-gold); }
-    .category-card i { font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 15px; }
-    .category-card h4 { font-size: 1.3rem; margin-bottom: 10px; color: var(--accent-gold); }
-    .category-card p { color: #ccc; font-size: 0.9rem; margin-bottom: 15px; }
-    .category-stats { display: flex; justify-content: center; gap: 20px; margin-top: 15px; }
-    .category-stats span { background: rgba(255,215,0,0.2); padding: 5px 12px; border-radius: 20px; font-size: 0.7rem; }
+    .region-categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
+    .region-cat-card { background: #111111; border-radius: 20px; padding: 25px; text-align: center; border: 1px solid rgba(255,215,0,0.3); transition: all 0.3s; }
+    .region-cat-card:hover { transform: translateY(-5px); border-color: var(--accent-gold); }
+    .region-cat-card i { font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px; }
+    .region-cat-card h4 { font-size: 1.2rem; margin-bottom: 10px; color: var(--accent-gold); }
+    .region-cat-card p { color: #ccc; font-size: 0.85rem; }
+    .tech-specs { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin: 40px 0; }
+    .tech-card { background: #111111; border-radius: 16px; padding: 20px; text-align: center; border: 1px solid rgba(255,215,0,0.3); }
+    .tech-card i { font-size: 1.8rem; color: var(--accent-gold); margin-bottom: 10px; }
+    .faq-item { background: #111111; margin-bottom: 15px; border-radius: 16px; border: 1px solid rgba(255,215,0,0.3); overflow: hidden; }
+    .faq-question { padding: 18px 25px; font-size: 1rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #111111; color: var(--accent-gold); }
+    .faq-question:hover { background: rgba(255,215,0,0.05); }
+    .faq-answer { padding: 0 25px 25px; display: none; color: #ccc; line-height: 1.7; }
+    .faq-answer.active { display: block; }
+    .keywords-section { background: #111111; border-radius: 20px; padding: 25px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,215,0,0.3); }
+    .keywords-section p { color: #888; font-size: 0.75rem; line-height: 1.8; }
     footer { padding: 50px 0 30px; text-align: center; background: #050505; border-top: 1px solid var(--accent-gold); margin-top: 50px; }
     .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 25px; }
     .footer-links a { color: #aaa; text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
@@ -124,78 +136,119 @@
     </div>
   </div>
 </header>
+
 <section class="hero">
   <div class="container">
-    <h1>SOLARA TV Movies: 60,000+ Movies & Series</h1>
-    <p>Watch the latest Hollywood blockbusters, European cinema, Australian films, and Arabic movies in stunning Ultra HD quality with SOLARA TV. Free trial available for all regions.</p>
+    <h1>SOLARA TV Movies: 60,000+ 4K Movies & Series</h1>
+    <p>Stream 60,000+ blockbuster IPTV movies across Europe — UK, Netherlands, Germany, France, Italy, Spain, Australia, USA & GCC — in 4K & HD with multilingual audio. Instant WhatsApp activation, European-optimized servers, and 24/7 multilingual support. Perfect for expats, travelers, and local viewers across Europe.</p>
   </div>
 </section>
+
 <div class="container">
+  <!-- Latest Movie Additions Banner -->
+  <div class="stats-banner">
+    <h3>🎬 Latest Movie Additions on SOLARA TV</h3>
+    <div class="stats-items">
+      <div class="stat-item"><div class="stat-number">Just Added</div><div>The Batman 2026 (4K) with Dutch, German, French audio tracks</div></div>
+    </div>
+  </div>
+
+  <!-- Regional Collections Stats -->
+  <div class="stats-banner">
+    <h3>🌍 SOLARA TV Movie Collections by Region</h3>
+    <div class="stats-items">
+      <div class="stat-item"><div class="stat-number">5,000+</div><div>British Films (BBC, ITV)</div></div>
+      <div class="stat-item"><div class="stat-number">3,000+</div><div>Nederlandse Films (NPO)</div></div>
+      <div class="stat-item"><div class="stat-number">4,000+</div><div>Deutsche Filme (ARD/ZDF)</div></div>
+      <div class="stat-item"><div class="stat-number">3,500+</div><div>Films Français (Canal+)</div></div>
+      <div class="stat-item"><div class="stat-number">2,800+</div><div>Film Italiani (RAI)</div></div>
+      <div class="stat-item"><div class="stat-number">3,200+</div><div>Películas Español (TVE)</div></div>
+      <div class="stat-item"><div class="stat-number">1,500+</div><div>Australian Films</div></div>
+    </div>
+  </div>
+
+  <!-- Latest Releases Grid -->
   <h2 class="section-title">🔥 Latest Releases on SOLARA TV</h2>
   <div class="movie-grid">
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg');"><div class="movie-quality">UHD</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Avengers: Doomsday</h3><div class="movie-category">🇺🇸 Marvel Studios | Action</div><p>Robert Downey Jr. returns as Doctor Doom. SOLARA TV brings you this epic.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg');"><div class="movie-quality">HDR</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Spider-Man: Brand New Day</h3><div class="movie-category">🇺🇸 Marvel/Sony | Adventure</div><p>Tom Holland returns. Watch on SOLARA TV in stunning quality.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg');"><div class="movie-quality">UHD</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Dune: Messiah</h3><div class="movie-category">🇺🇸 Warner Bros | Sci-Fi</div><p>Denis Villeneuve's epic conclusion. Available now on SOLARA TV.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg');"><div class="movie-quality">HDR</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>John Wick: Chapter 4</h3><div class="movie-category">🇺🇸 Hollywood | Action</div><p>Keanu Reeves returns. SOLARA TV brings you the ultimate action experience.</p></div></div>
+    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg');"><div class="movie-quality">4K UHD</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Avengers: Doomsday</h3><div class="movie-category">🇺🇸 Marvel Studios | Action</div><p>Robert Downey Jr. returns as Doctor Doom. SOLARA TV brings you this epic in 4K.</p></div></div>
+    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg');"><div class="movie-quality">4K HDR</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Spider-Man: Brand New Day</h3><div class="movie-category">🇺🇸 Marvel/Sony | Adventure</div><p>Tom Holland returns. Watch on SOLARA TV in stunning 4K quality.</p></div></div>
+    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg');"><div class="movie-quality">4K</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Dune: Messiah</h3><div class="movie-category">🇺🇸 Warner Bros | Sci-Fi</div><p>Denis Villeneuve's epic conclusion. Available now on SOLARA TV.</p></div></div>
+    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg');"><div class="movie-quality">4K HDR</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>John Wick: Chapter 4</h3><div class="movie-category">🇺🇸 Hollywood | Action</div><p>Keanu Reeves returns. SOLARA TV brings you the ultimate action experience.</p></div></div>
     <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/kQs6lheLQlZ2oW3FkgYxUftNniZ.jpg');"><div class="movie-quality">HD</div><div class="movie-year">2023</div></div><div class="movie-info"><h3>Anatomy of a Fall</h3><div class="movie-category">🇫🇷 France | Drama</div><p>Palme d'Or winner. SOLARA TV offers French audio with English subtitles.</p></div></div>
     <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/hkxxMIGaiCTmrEArbZcJYqatdMp.jpg');"><div class="movie-quality">HD</div><div class="movie-year">2023</div></div><div class="movie-info"><h3>The Zone of Interest</h3><div class="movie-category">🇩🇪 Germany | Drama</div><p>German audio with subtitles. SOLARA TV brings award-winning cinema.</p></div></div>
   </div>
 
-  <h2 class="section-title">🌍 SOLARA TV Movie Collections by Region</h2>
-  <div class="movie-grid">
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');"><div class="movie-quality">UHD</div></div><div class="movie-info"><h3>UK Collection</h3><div class="movie-category">🇬🇧 British Cinema</div><p>5,000+ British films on SOLARA TV. BBC, ITV, and UK independent cinema.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');"><div class="movie-quality">UHD</div></div><div class="movie-info"><h3>Netherlands Collection</h3><div class="movie-category">🇳🇱 Dutch Cinema</div><p>3,000+ Nederlandse films on SOLARA TV. NPO productions and Dutch classics.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');"><div class="movie-quality">UHD</div></div><div class="movie-info"><h3>Hollywood Collection</h3><div class="movie-category">🇺🇸 American Cinema</div><p>Complete Hollywood library on SOLARA TV. Marvel, DC, Disney, Warner Bros.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');"><div class="movie-quality">UHD</div></div><div class="movie-info"><h3>Australia Collection</h3><div class="movie-category">🇦🇺 Australian Cinema</div><p>1,500+ Australian films on SOLARA TV. Local productions and classics.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');"><div class="movie-quality">UHD</div></div><div class="movie-info"><h3>German Collection</h3><div class="movie-category">🇩🇪 German Cinema</div><p>4,000+ Deutsche Filme on SOLARA TV. ARD, ZDF, and German classics.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80');"><div class="movie-quality">UHD</div></div><div class="movie-info"><h3>GCC Collection</h3><div class="movie-category">🇦🇪 Arabic Cinema</div><p>1,200+ Arabic films on SOLARA TV. UAE, Saudi, Qatari productions.</p></div></div>
+  <!-- Browse European Movies by Category -->
+  <h2 class="section-title">🎬 Browse European Movies by Category</h2>
+  <div class="region-categories">
+    <div class="region-cat-card"><i class="fas fa-flag-gb"></i><h4>🇬🇧 UK Cinema</h4><p>British films, BBC productions, and UK independent cinema with English subtitles. Perfect for UK expats across Europe.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-nl"></i><h4>🇳🇱 Dutch Films</h4><p>Nederlandse films with Dutch audio and subtitles. NPO productions perfect for NL expats worldwide.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-usa"></i><h4>🇺🇸 Hollywood</h4><p>Latest Hollywood blockbusters, Marvel, DC, and American cinema in 4K with multilingual audio.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-au"></i><h4>🇦🇺 Australian Cinema</h4><p>Australian films and series perfect for Australian viewers in Europe with local content.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-de"></i><h4>🇩🇪 German Cinema</h4><p>Deutsche Filme, ARD productions, and German-language cinema with English/Dutch subtitles.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-fr"></i><h4>🇫🇷 French Cinema</h4><p>Cinéma français, Canal+ productions, and French films with multilingual audio tracks.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-it"></i><h4>🇮🇹 Italian Films</h4><p>Cinema italiano, RAI productions, and Italian cinema with English/German subtitles.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-es"></i><h4>🇪🇸 Spanish Films</h4><p>Cine español, TVE productions, and Spanish-language cinema with European subtitles.</p></div>
   </div>
 
-  <h2 class="section-title">📺 SOLARA TV Country Packages</h2>
+  <!-- Why Choose SOLARA TV Section -->
+  <h2 class="section-title">✨ Why Choose SOLARA TV for European IPTV Movies 2026?</h2>
   <div class="country-packages">
-    <div class="country-card"><h3><i class="fas fa-flag-gb"></i> United Kingdom Package</h3><ul><li><i class="fas fa-check-circle"></i> 5,000+ British Films</li><li><i class="fas fa-check-circle"></i> BBC Productions & ITV Content</li><li><i class="fas fa-check-circle"></i> UK Independent Cinema</li><li><i class="fas fa-check-circle"></i> British Comedies & Dramas</li><li><i class="fas fa-check-circle"></i> English Audio with Subtitles</li></ul><div class="country-badge">🇬🇧 Best for UK Expats</div></div>
-    <div class="country-card"><h3><i class="fas fa-flag-nl"></i> Netherlands Package</h3><ul><li><i class="fas fa-check-circle"></i> 3,000+ Nederlandse Films</li><li><i class="fas fa-check-circle"></i> NPO Productions & Dutch Classics</li><li><i class="fas fa-check-circle"></i> Dutch Audio with Subtitles</li><li><i class="fas fa-check-circle"></i> Children's Films in Dutch</li><li><i class="fas fa-check-circle"></i> Dutch Documentaries</li></ul><div class="country-badge">🇳🇱 Perfect for Dutch Viewers</div></div>
-    <div class="country-card"><h3><i class="fas fa-flag-de"></i> Germany Package</h3><ul><li><i class="fas fa-check-circle"></i> 4,000+ Deutsche Filme</li><li><i class="fas fa-check-circle"></i> ARD & ZDF Productions</li><li><i class="fas fa-check-circle"></i> German Cinema Classics</li><li><i class="fas fa-check-circle"></i> German Audio with Subtitles</li><li><i class="fas fa-check-circle"></i> Contemporary German Films</li></ul><div class="country-badge">🇩🇪 Ideal for German Speakers</div></div>
-    <div class="country-card"><h3><i class="fas fa-flag-fr"></i> France Package</h3><ul><li><i class="fas fa-check-circle"></i> 3,500+ Films Français</li><li><i class="fas fa-check-circle"></i> Canal+ Productions</li><li><i class="fas fa-check-circle"></i> French New Wave Classics</li><li><i class="fas fa-check-circle"></i> French Audio with Subtitles</li><li><i class="fas fa-check-circle"></i> Contemporary French Cinema</li></ul><div class="country-badge">🇫🇷 Best French Cinema Collection</div></div>
-    <div class="country-card"><h3><i class="fas fa-flag-it"></i> Italy Package</h3><ul><li><i class="fas fa-check-circle"></i> 2,800+ Film Italiani</li><li><i class="fas fa-check-circle"></i> RAI & Mediaset Productions</li><li><i class="fas fa-check-circle"></i> Italian Neorealism Classics</li><li><i class="fas fa-check-circle"></i> Italian Audio with Subtitles</li><li><i class="fas fa-check-circle"></i> Contemporary Italian Cinema</li></ul><div class="country-badge">🇮🇹 Italian Cinema Masterpieces</div></div>
-    <div class="country-card"><h3><i class="fas fa-flag-es"></i> Spain Package</h3><ul><li><i class="fas fa-check-circle"></i> 3,200+ Películas Español</li><li><i class="fas fa-check-circle"></i> TVE & Antena 3 Productions</li><li><i class="fas fa-check-circle"></i> Spanish Cinema Classics</li><li><i class="fas fa-check-circle"></i> Spanish Audio with Subtitles</li><li><i class="fas fa-check-circle"></i> Latin American Cinema</li></ul><div class="country-badge">🇪🇸 Spanish & Latin American Films</div></div>
-    <div class="country-card"><h3><i class="fas fa-flag-au"></i> Australia Package</h3><ul><li><i class="fas fa-check-circle"></i> 1,500+ Australian Films</li><li><i class="fas fa-check-circle"></i> Local Productions & Classics</li><li><i class="fas fa-check-circle"></i> Indigenous Australian Cinema</li><li><i class="fas fa-check-circle"></i> English Audio with Subtitles</li><li><i class="fas fa-check-circle"></i> Australian Documentaries</li></ul><div class="country-badge">🇦🇺 Perfect for Australian Expats</div></div>
-    <div class="country-card"><h3><i class="fas fa-flag-usa"></i> USA Package</h3><ul><li><i class="fas fa-check-circle"></i> Complete Hollywood Library</li><li><i class="fas fa-check-circle"></i> Marvel, DC, Disney, Warner Bros</li><li><i class="fas fa-check-circle"></i> Paramount, Sony, Universal</li><li><i class="fas fa-check-circle"></i> English Audio with Subtitles</li><li><i class="fas fa-check-circle"></i> Independent American Cinema</li></ul><div class="country-badge">🇺🇸 Ultimate Hollywood Collection</div></div>
-    <div class="country-card"><h3><i class="fas fa-flag-ca"></i> Canada Package</h3><ul><li><i class="fas fa-check-circle"></i> 1,200+ Canadian Films</li><li><i class="fas fa-check-circle"></i> CBC & Telefilm Productions</li><li><i class="fas fa-check-circle"></i> French & English Audio</li><li><i class="fas fa-check-circle"></i> Canadian Independent Cinema</li><li><i class="fas fa-check-circle"></i> Quebec Cinema Collection</li></ul><div class="country-badge">🇨🇦 Best Canadian Content</div></div>
-    <div class="country-card"><h3><i class="fas fa-flag-ae"></i> UAE & GCC Package</h3><ul><li><i class="fas fa-check-circle"></i> 1,200+ Arabic Films</li><li><i class="fas fa-check-circle"></i> UAE, Saudi, Qatari Productions</li><li><i class="fas fa-check-circle"></i> Egyptian & Lebanese Cinema</li><li><i class="fas fa-check-circle"></i> Arabic Audio with Subtitles</li><li><i class="fas fa-check-circle"></i> Gulf Region Documentaries</li></ul><div class="country-badge">🇦🇪 Arabic & Gulf Cinema</div></div>
+    <div class="country-card"><h3><i class="fas fa-server"></i> European Optimized</h3><p>Local servers in UK (London), NL (Amsterdam), DE (Frankfurt), FR (Paris), IT (Milan), ES (Madrid), AU (Sydney) for minimal buffering.</p></div>
+    <div class="country-card"><h3><i class="fas fa-language"></i> Multilingual Library</h3><p>60,000+ movies across all major European languages. Perfect for expats wanting home country content.</p></div>
+    <div class="country-card"><h3><i class="fas fa-film"></i> Complete Collections</h3><p>UK, Dutch, German, French, Italian, Spanish, Australian, Hollywood, and GCC cinema.</p></div>
+    <div class="country-card"><h3><i class="fas fa-headset"></i> 24/7 Support</h3><p>Multilingual support in English, Dutch, German, French, Spanish, Italian, Arabic via WhatsApp.</p></div>
+    <div class="country-card"><h3><i class="fas fa-tachometer-alt"></i> 4K Ultra HD</h3><p>Stunning picture quality with adaptive streaming for all internet speeds.</p></div>
+    <div class="country-card"><h3><i class="fas fa-gift"></i> Free Trial</h3><p>24-hour free trial via WhatsApp. Test our service before subscribing.</p></div>
   </div>
 
-  <h2 class="section-title">🎬 SOLARA TV Exclusive Movie Categories</h2>
-  <div class="category-grid">
-    <div class="category-card"><i class="fas fa-crown"></i><h4>Award Winners</h4><p>Academy Award, Palme d'Or, BAFTA winning films. The best critically acclaimed cinema on SOLARA TV.</p><div class="category-stats"><span>500+ Films</span><span>Oscar Winners</span></div></div>
-    <div class="category-card"><i class="fas fa-clock"></i><h4>Classic Cinema</h4><p>Timeless masterpieces from the golden age of Hollywood, European classics, and international treasures.</p><div class="category-stats"><span>2,000+ Films</span><span>1930-1980</span></div></div>
-    <div class="category-card"><i class="fas fa-fire"></i><h4>Action & Thriller</h4><p>High-octane action, spy thrillers, crime dramas. The most exciting collection on SOLARA TV.</p><div class="category-stats"><span>8,000+ Films</span><span>4K Quality</span></div></div>
-    <div class="category-card"><i class="fas fa-heart"></i><h4>Romance & Drama</h4><p>Heartwarming love stories, emotional dramas, and character-driven narratives from around the world.</p><div class="category-stats"><span>12,000+ Films</span><span>Multi-Language</span></div></div>
-    <div class="category-card"><i class="fas fa-laugh"></i><h4>Comedy</h4><p>British comedies, French farces, Hollywood hits, and international laugh-out-loud favorites.</p><div class="category-stats"><span>6,000+ Films</span><span>Cult Classics</span></div></div>
-    <div class="category-card"><i class="fas fa-skull"></i><h4>Horror & Sci-Fi</h4><p>Supernatural thrillers, psychological horror, futuristic sci-fi, and fantasy epics.</p><div class="category-stats"><span>5,000+ Films</span><span>Cult Favorites</span></div></div>
-    <div class="category-card"><i class="fas fa-child"></i><h4>Family & Animation</h4><p>Disney classics, Pixar masterpieces, animated features, and family-friendly entertainment.</p><div class="category-stats"><span>3,000+ Films</span><span>All Ages</span></div></div>
-    <div class="category-card"><i class="fas fa-globe"></i><h4>World Cinema</h4><p>Films from Europe, Asia, Africa, Latin America. SOLARA TV brings global stories to your screen.</p><div class="category-stats"><span>10,000+ Films</span><span>50+ Countries</span></div></div>
-    <div class="category-card"><i class="fas fa-document"></i><h4>Documentaries</h4><p>Nature, history, music, politics, and true crime documentaries. Educational and entertaining.</p><div class="category-stats"><span>4,000+ Films</span><span>4K Quality</span></div></div>
-  </div>
-
-  <h2 class="section-title">🎯 Why Choose SOLARA TV for Movies?</h2>
+  <!-- European Movie Collections Available -->
+  <h2 class="section-title">📀 European Movie Collections Available on SOLARA TV</h2>
   <div class="country-packages">
-    <div class="country-card"><h3><i class="fas fa-film"></i> Massive Library</h3><p>60,000+ movies and series from Hollywood, Europe, Australia, and the GCC. SOLARA TV offers the most comprehensive IPTV movie collection.</p></div>
-    <div class="country-card"><h3><i class="fas fa-language"></i> Multi-Language</h3><p>Movies in English, Dutch, German, French, Italian, Spanish, and Arabic with subtitles. SOLARA TV brings global cinema to your screen.</p></div>
-    <div class="country-card"><h3><i class="fas fa-tv"></i> All Devices</h3><p>Watch SOLARA TV movies on Firestick, Smart TV, Android, iOS, Apple TV, MAG boxes, and more. Seamless streaming experience.</p></div>
-    <div class="country-card"><h3><i class="fas fa-headset"></i> 24/7 Support</h3><p>SOLARA TV support team is available 24/7 in English, Dutch, German, French, Spanish, Italian, and Arabic. Instant help via WhatsApp.</p></div>
-    <div class="country-card"><h3><i class="fas fa-sync-alt"></i> Daily Updates</h3><p>New movies added daily to SOLARA TV library. Latest releases from UK, Netherlands, Germany, France, Australia, USA, and GCC.</p></div>
-    <div class="country-card"><h3><i class="fas fa-gift"></i> Free Trial</h3><p>Try SOLARA TV with a 24-hour free trial. Test our movie library, streaming quality, and device compatibility risk-free.</p></div>
+    <div class="country-card"><h3><i class="fas fa-flag-gb"></i> United Kingdom Collection</h3><p>Complete British cinema with BBC, ITV, and Channel 4 productions. Latest UK releases, classic British films, and UK independent cinema with English subtitles. Perfect for UK expats across Europe.</p></div>
+    <div class="country-card"><h3><i class="fas fa-flag-nl"></i> Netherlands Collection</h3><p>Nederlandse films with Dutch audio and subtitles. NPO productions, Dutch cinema classics, and latest NL releases perfect for Dutch expats across Europe and international viewers.</p></div>
+    <div class="country-card"><h3><i class="fas fa-flag-usa"></i> USA Hollywood Collection</h3><p>Latest American blockbusters, Marvel, DC, Disney, Paramount, Warner Bros. releases in 4K with multiple language options including English, Dutch, German, French, Italian, Spanish.</p></div>
+    <div class="country-card"><h3><i class="fas fa-flag-au"></i> Australia Collection</h3><p>Australian cinema and TV productions perfect for Australian viewers living in Europe. Latest AU releases and classic Australian films.</p></div>
+    <div class="country-card"><h3><i class="fas fa-flag-de"></i> Germany Collection</h3><p>Deutsche Filme with German audio, ARD and ZDF productions, German cinema classics, and latest releases with English/Dutch/French subtitles.</p></div>
+    <div class="country-card"><h3><i class="fas fa-flag-fr"></i> France Collection</h3><p>Cinéma français with French audio, Canal+ productions, classic French films, and latest releases with multilingual subtitles.</p></div>
+    <div class="country-card"><h3><i class="fas fa-flag-it"></i> Italy Collection</h3><p>Cinema italiano with Italian audio, RAI and Mediaset productions, Italian cinema masterpieces, and new releases with English/German subtitles.</p></div>
+    <div class="country-card"><h3><i class="fas fa-flag-es"></i> Spain Collection</h3><p>Cine español with Spanish audio, TVE and Antena 3 productions, Spanish-language cinema, and Latin American films with European language subtitles.</p></div>
   </div>
 
-  <h2 class="section-title">📞 Start Your SOLARA TV Movie Journey</h2>
+  <!-- Technical Specifications -->
+  <h2 class="section-title">⚙️ Technical Specifications & Requirements</h2>
+  <div class="tech-specs">
+    <div class="tech-card"><i class="fas fa-video"></i><h4>Video Quality</h4><p>Up to 4K UHD (3840x2160) / Full HD 1080p / HD 720p with adaptive streaming</p></div>
+    <div class="tech-card"><i class="fas fa-microphone-alt"></i><h4>Audio Options</h4><p>Multilingual audio tracks (English, Dutch, German, French, Italian, Spanish, Arabic)</p></div>
+    <div class="tech-card"><i class="fas fa-closed-captioning"></i><h4>Subtitles</h4><p>Multiple language subtitle support including English, Dutch, German, French, Italian, Spanish</p></div>
+    <div class="tech-card"><i class="fas fa-tachometer-alt"></i><h4>Internet Speed</h4><p>Minimum 15 Mbps for HD, 25 Mbps for 4K streaming across Europe</p></div>
+    <div class="tech-card"><i class="fas fa-tv"></i><h4>Compatible Devices</h4><p>Smart TVs, Fire Stick, Apple TV, Android, iOS, Windows/Mac, MAG boxes</p></div>
+    <div class="tech-card"><i class="fas fa-sync-alt"></i><h4>Updates</h4><p>Daily library updates with latest European and international releases</p></div>
+  </div>
+
+  <!-- FAQ Section -->
+  <h2 class="section-title">❓ Frequently Asked Questions - European IPTV Movies</h2>
+  <div class="faq-item"><div class="faq-question">Do you have movies with Dutch/German/French audio and subtitles? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Yes! SOLARA TV offers extensive multilingual support. Our library includes movies with Dutch audio & subtitles for Netherlands viewers, German audio for German-speaking countries, French audio for France and Belgium, Italian audio for Italy, Spanish audio for Spain and Latin America, plus English options for all films.</div></div>
+  <div class="faq-item"><div class="faq-question">Can I watch British/Dutch/German films outside their home countries? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Absolutely! SOLARA TV works worldwide. UK expats can watch British films anywhere, Dutch expats can access Nederlandse films globally, German expats can watch Deutsche Filme abroad. Perfect for travelers and expats wanting home country content.</div></div>
+  <div class="faq-item"><div class="faq-question">How often is the European movie library updated? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">We update our library daily with new releases from the UK, Netherlands, USA, Australia, Germany, France, Italy, Spain, and other European countries. New Hollywood releases are added as soon as they become available, often before other streaming platforms.</div></div>
+  <div class="faq-item"><div class="faq-question">Will IPTV movies work on my European internet connection? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Yes! SOLARA TV is optimized for European internet with local servers in the UK, Netherlands, Germany, France, Italy, Spain, and Australia. This ensures minimal buffering and optimal streaming quality across all European countries and ISPs.</div></div>
+  <div class="faq-item"><div class="faq-question">What payment methods do you accept for European customers? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">We accept all major European payment methods: Credit/Debit Cards (Visa, Mastercard), PayPal, iDEAL (Netherlands), Giropay (Germany), SEPA Bank Transfer (EU-wide).</div></div>
+  <div class="faq-item"><div class="faq-question">Is there multilingual customer support available? <i class="fas fa-chevron-down"></i></div><div class="faq-answer">Yes! Our 24/7 customer support is available in English, Dutch, German, French, Spanish, Italian, and Arabic via WhatsApp. We provide setup assistance and troubleshooting in your preferred language.</div></div>
+
+  <!-- Keywords Section for SEO -->
+  <div class="keywords-section">
+    <p><strong>Target Keywords for European Market 2026:</strong> iptv movies europe 2026, iptv films nederland 2026, iptv uk movies 4k, iptv deutschland filme hd, iptv france films français, iptv italy film italiani, iptv spain películas español, iptv australia movies, best iptv for movies europe 2026, watch hollywood movies iptv europe, multilingual iptv movies europe, iptv movies with dutch subtitles, iptv movies with german audio, iptv movies with french subtitles, iptv movies with italian audio, iptv movies with spanish subtitles, european iptv movie library 2026, iptv service europe movies 4k, netflix alternative iptv europe movies, expat iptv movies europe 2026, iptv movies free trial europe 2026.</p>
+  </div>
+
+  <!-- CTA Section -->
   <div style="background: #111111; border-radius: 24px; padding: 40px; text-align: center; margin: 40px 0; border: 1px solid rgba(255,215,0,0.3);">
-    <h3 style="color: var(--accent-gold); font-size: 1.5rem; margin-bottom: 15px;">🎬 24-Hour Free Trial Available</h3>
-    <p style="color: #ccc; margin-bottom: 20px;">Contact SOLARA TV on WhatsApp to start your free trial. Watch 60,000+ movies in stunning quality.</p>
-    <a href="https://wa.me/212600160196?text=I%20want%20a%20free%20trial%20for%20SOLARA%20TV%20Movies" style="background: #25D366; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold;">🚀 Start Free Trial on WhatsApp</a>
-    <p style="margin-top: 20px; font-size: 0.8rem;">✓ Instant activation • ✓ 24/7 support • ✓ All devices supported</p>
+    <h3 style="color: var(--accent-gold); font-size: 1.5rem; margin-bottom: 15px;">🎬 Start Streaming European Movies Today</h3>
+    <p style="color: #ccc; margin-bottom: 20px;">Join thousands of satisfied European customers enjoying the best IPTV movie experience with multilingual support and country-specific content. 24-hour free trial available.</p>
+    <a href="https://wa.me/212600160196?text=I%20want%20a%20free%20trial%20for%20SOLARA%20TV%20Movies" style="background: #25D366; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold;">📲 Start 24h Free Trial Europe</a>
+    <p style="margin-top: 20px; font-size: 0.8rem;">✓ Instant activation • ✓ 24/7 multilingual support • ✓ All devices supported</p>
   </div>
 </div>
+
 <footer>
   <div class="container">
     <div class="footer-links">
@@ -209,5 +262,16 @@
     <a href="https://wa.me/212600160196" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', () => {
+      const answer = item.nextElementSibling;
+      answer.classList.toggle('active');
+      const icon = item.querySelector('i');
+      icon.style.transform = answer.classList.contains('active') ? 'rotate(180deg)' : 'rotate(0)';
+    });
+  });
+</script>
 </body>
 </html>

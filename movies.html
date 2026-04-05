@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOLARA TV Movies | 60,000+ Movies in 4K & HD Streaming Worldwide</title>
   <meta name="description" content="Discover the ultimate movie experience with SOLARA TV Movies, offering access to over 60,000+ blockbuster movies on demand — from the latest Hollywood releases to timeless classics, all in Ultra HD & 4K quality with zero buffering. Available in UK, Germany, France, Netherlands, Italy, Spain, USA, Australia & GCC. Best IPTV movie service 2026.">
-  <meta name="keywords" content="SOLARA TV Movies, IPTV movies, 4K movies, watch movies online, best IPTV for movies, IPTV movie library, Hollywood movies on IPTV, European cinema, British films, Dutch films, German cinema, French cinema, Italian movies, Spanish films, Australian cinema, Arabic movies, IPTV UK movies, IPTV Netherlands films, IPTV Germany movies, IPTV France cinema, IPTV Italy film italiani, IPTV Spain películas, IPTV Australia films, IPTV USA movies, IPTV Canada movies, IPTV GCC films, IPTV UAE movies, best IPTV movie service 2026, iptv movies europe, iptv films nederland, iptv deutschland filme, iptv france films français, iptv italy film italiani, iptv spain películas español, iptv australia movies">
+  <meta name="keywords" content="SOLARA TV Movies, IPTV movies, 4K movies, watch movies online, best IPTV for movies, IPTV movie library, Hollywood movies on IPTV, European cinema, British films, Dutch films, German cinema, French cinema, Italian movies, Spanish films, Australian cinema, Arabic movies, IPTV UK movies, IPTV Netherlands films, IPTV Germany movies, IPTV France cinema, IPTV Italy film italiani, IPTV Spain películas, IPTV Australia films, IPTV USA movies, IPTV Canada movies, IPTV GCC films, IPTV UAE movies, best IPTV movie service 2026">
   <meta name="author" content="SOLARA TV">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.solaratv.tv/movies">
@@ -59,24 +59,25 @@
     .hero p { font-size: 1rem; max-width: 800px; margin: 0 auto; color: #ccc; }
     .section-title { text-align: center; font-size: 1.8rem; margin: 40px 0 25px; color: var(--accent-gold); position: relative; }
     .section-title:after { content: ''; display: block; width: 60px; height: 3px; background: var(--accent-gold); margin: 10px auto 0; }
-    .movie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px; margin: 40px 0; }
+    .movie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin: 40px 0; justify-content: center; }
     .movie-card {
       background: #111111;
-      border-radius: 16px;
+      border-radius: 20px;
       overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
       border: 1px solid rgba(255,215,0,0.3);
+      max-width: 280px;
+      margin: 0 auto;
+      width: 100%;
     }
     .movie-card:hover { transform: translateY(-8px); border-color: var(--accent-gold); box-shadow: 0 0 20px rgba(255,215,0,0.2); }
-    .movie-poster { height: 320px; background-size: cover; background-position: center; position: relative; }
+    .movie-poster { height: 400px; background-size: cover; background-position: center; position: relative; }
     .movie-year { position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.7); padding: 4px 10px; border-radius: 20px; font-size: 0.7rem; border: 1px solid var(--accent-gold); color: var(--accent-gold); }
     .movie-quality { position: absolute; top: 10px; right: 10px; background: var(--accent-gold); color: #0A0A0A; padding: 3px 8px; border-radius: 15px; font-size: 0.7rem; font-weight: bold; }
     .movie-info { padding: 15px; }
     .movie-info h3 { font-size: 1rem; margin-bottom: 5px; color: var(--accent-gold); }
     .movie-category { font-size: 0.7rem; color: #aaa; margin-bottom: 8px; }
     .movie-info p { font-size: 0.8rem; color: #ccc; line-height: 1.4; }
-    .keyword-section { background: #111111; border-radius: 20px; padding: 25px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,215,0,0.3); }
-    .keyword-section p { color: #888; font-size: 0.7rem; line-height: 1.8; }
     .country-flags { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 25px 0; }
     .country-flag { background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); padding: 6px 14px; border-radius: 40px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--accent-gold); display: flex; align-items: center; gap: 6px; color: var(--accent-gold); }
     .stats-banner { background: linear-gradient(135deg, #111111, #1A1A1A); border-radius: 20px; padding: 25px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,215,0,0.3); }
@@ -94,6 +95,7 @@
     .feature-box:hover { transform: translateY(-5px); border-color: var(--accent-gold); }
     .feature-box i { font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px; }
     .feature-box h4 { font-size: 1.1rem; margin-bottom: 10px; color: var(--accent-gold); }
+    .feature-box p { color: #ccc; font-size: 0.8rem; }
     footer { padding: 40px 0 25px; text-align: center; background: #050505; border-top: 1px solid var(--accent-gold); margin-top: 50px; }
     .footer-links { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 20px; }
     .footer-links a { color: #aaa; text-decoration: none; font-size: 0.7rem; transition: color 0.3s; }
@@ -102,7 +104,7 @@
     .payment-methods i:hover { color: var(--accent-gold); }
     .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background: #25D366; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 99; transition: transform 0.3s; }
     .whatsapp-float:hover { transform: scale(1.05); }
-    @media (max-width: 768px) { .nav-links, .cta-buttons { display: none; } .hero h1 { font-size: 1.5rem; } .movie-poster { height: 250px; } }
+    @media (max-width: 768px) { .nav-links, .cta-buttons { display: none; } .hero h1 { font-size: 1.5rem; } .movie-poster { height: 320px; } }
   </style>
 </head>
 <body>
@@ -162,28 +164,24 @@
     </div>
   </div>
 
-  <!-- Latest Releases Grid -->
+  <!-- Latest Releases Grid - 4 Movies Only -->
   <h2 class="section-title">🔥 Must-Watch Premieres</h2>
   <div class="movie-grid">
     <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg');"><div class="movie-quality">4K UHD</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Avengers: Doomsday</h3><div class="movie-category">🇺🇸 Marvel Studios | Action</div><p>Robert Downey Jr. returns as Doctor Doom. Experience the multiverse like never before with SOLARA TV.</p></div></div>
     <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg');"><div class="movie-quality">4K HDR</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Spider-Man: Brand New Day</h3><div class="movie-category">🇺🇸 Marvel/Sony | Adventure</div><p>Tom Holland's journey continues. A fresh chapter unfolds in stunning quality on SOLARA TV.</p></div></div>
     <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg');"><div class="movie-quality">4K</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Dune: Messiah</h3><div class="movie-category">🇺🇸 Warner Bros | Sci-Fi</div><p>The epic conclusion of Denis Villeneuve's masterpiece. Witness the prophecy fulfilled on SOLARA TV.</p></div></div>
     <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg');"><div class="movie-quality">4K HDR</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>John Wick: Chapter 4</h3><div class="movie-category">🇺🇸 Hollywood | Action</div><p>Keanu Reeves delivers the ultimate action experience. Pure adrenaline on SOLARA TV.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj8XjjuF5J.jpg');"><div class="movie-quality">4K</div><div class="movie-year">2023</div></div><div class="movie-info"><h3>Spider-Man: Across the Spider-Verse</h3><div class="movie-category">🇺🇸 Sony | Animation</div><p>Groundbreaking animation and storytelling. Available now on SOLARA TV.</p></div></div>
-    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/4q2NNj4S5dG2RLF9CpXmZgmfu0x.jpg');"><div class="movie-quality">4K</div><div class="movie-year">2023</div></div><div class="movie-info"><h3>Mission: Impossible - Dead Reckoning</h3><div class="movie-category">🇺🇸 Paramount | Action</div><p>Tom Cruise delivers impossible stunts. Watch on SOLARA TV in stunning 4K.</p></div></div>
   </div>
 
   <!-- Why SOLARA TV Movies is the Best Choice -->
   <h2 class="section-title">⭐ Why SOLARA TV Movies is the Best Choice</h2>
   <div class="features-highlight">
-    <div class="feature-box"><i class="fas fa-film"></i><h4>60,000+ Movies Library</h4><p>Latest releases & classic films from Hollywood, Europe, Australia & GCC</p></div>
+    <div class="feature-box"><i class="fas fa-film"></i><h4>Massive Library</h4><p>60,000+ movies from Hollywood, Europe, Australia & GCC</p></div>
     <div class="feature-box"><i class="fas fa-tv"></i><h4>4K & HD Streaming</h4><p>Crystal-clear cinematic quality for an immersive experience</p></div>
-    <div class="feature-box"><i class="fas fa-bolt"></i><h4>Zero Buffering Technology</h4><p>Smooth, lag-free experience powered by European-optimized servers</p></div>
+    <div class="feature-box"><i class="fas fa-bolt"></i><h4>Zero Buffering</h4><p>Smooth, lag-free experience with European-optimized servers</p></div>
     <div class="feature-box"><i class="fas fa-sync-alt"></i><h4>Daily Updates</h4><p>New movies added every day—always fresh content</p></div>
-    <div class="feature-box"><i class="fas fa-language"></i><h4>Multi-Language Audio & Subtitles</h4><p>Perfect for global users—English, Dutch, German, French, Italian, Spanish, Arabic</p></div>
-    <div class="feature-box"><i class="fas fa-mobile-alt"></i><h4>All Devices Supported</h4><p>Smart TV, Android, iOS, Firestick, PC, MAG boxes—stream anywhere</p></div>
-    <div class="feature-box"><i class="fab fa-whatsapp"></i><h4>Instant WhatsApp Activation</h4><p>Get started in minutes—24/7 multilingual support</p></div>
-    <div class="feature-box"><i class="fas fa-tags"></i><h4>No Contracts • No Hidden Fees</h4><p>Unlimited access with transparent pricing</p></div>
+    <div class="feature-box"><i class="fas fa-language"></i><h4>Multi-Language</h4><p>Audio & subtitles in English, Dutch, German, French, Italian, Spanish, Arabic</p></div>
+    <div class="feature-box"><i class="fas fa-mobile-alt"></i><h4>All Devices</h4><p>Smart TV, Android, iOS, Firestick, PC, MAG boxes</p></div>
   </div>
 
   <!-- Browse by Region -->
@@ -199,26 +197,11 @@
     <div class="region-cat-card"><i class="fas fa-flag-es"></i><h4>🇪🇸 Spanish Cinema</h4><p>Cine español from TVE and beyond. Latin American films and European masterpieces in one place.</p></div>
   </div>
 
-  <!-- Regional Availability -->
-  <h2 class="section-title">🌍 Available in Europe, USA, Australia & GCC Countries</h2>
-  <div class="region-categories">
-    <div class="region-cat-card"><i class="fas fa-globe-europe"></i><h4>Europe</h4><p>United Kingdom, Netherlands, Germany, France, Italy, Spain, and all European countries</p></div>
-    <div class="region-cat-card"><i class="fas fa-globe-americas"></i><h4>North America</h4><p>United States, Canada</p></div>
-    <div class="region-cat-card"><i class="fas fa-globe-asia"></i><h4>Australia & Oceania</h4><p>Australia, New Zealand</p></div>
-    <div class="region-cat-card"><i class="fas fa-globe"></i><h4>GCC & Middle East</h4><p>UAE, Saudi Arabia, Qatar, Kuwait, Oman, Bahrain</p></div>
-  </div>
-  <p style="text-align: center; color: #aaa; margin: 20px 0;">Powered by high-speed European-optimized servers, ensuring fast, stable, and uninterrupted playback wherever you are.</p>
-
   <!-- CTA Section -->
   <div style="background: #111111; border-radius: 24px; padding: 35px; text-align: center; margin: 40px 0; border: 1px solid rgba(255,215,0,0.3);">
     <h3 style="color: var(--accent-gold); font-size: 1.5rem; margin-bottom: 15px;">🔥 Best IPTV Movie Package 2026 – Fast • Stable • Unlimited</h3>
     <p style="color: #ccc; margin-bottom: 20px;">💡 No contracts • No hidden fees • Unlimited access • Free 24-hour trial</p>
     <a href="https://wa.me/212600160196?text=I%20want%20to%20start%20streaming%20with%20SOLARA%20TV%20Movies" style="background: #25D366; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: bold;">📲 Start streaming now with SOLARA TV Movies</a>
-  </div>
-
-  <!-- Keywords Section for SEO -->
-  <div class="keyword-section">
-    <p><strong>Target Keywords for European & Global Market 2026:</strong> iptv movies europe 2026 • iptv films nederland 2026 • iptv uk movies 4k • iptv deutschland filme hd • iptv france films français • iptv italy film italiani • iptv spain películas español • iptv australia movies • best iptv for movies europe 2026 • watch hollywood movies iptv europe • multilingual iptv movies europe • iptv movies with dutch subtitles • iptv movies with german audio • iptv movies with french subtitles • iptv movies with italian audio • iptv movies with spanish subtitles • european iptv movie library 2026 • iptv service europe movies 4k • netflix alternative iptv europe movies • expat iptv movies europe 2026 • iptv movies free trial europe 2026 • SOLARA TV movies • best IPTV movie service • 4K streaming IPTV</p>
   </div>
 </div>
 

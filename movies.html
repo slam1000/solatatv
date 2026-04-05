@@ -59,75 +59,43 @@
     .hero p { font-size: 1rem; max-width: 800px; margin: 0 auto; color: #ccc; }
     .section-title { text-align: center; font-size: 1.8rem; margin: 40px 0 25px; color: var(--accent-gold); position: relative; }
     .section-title:after { content: ''; display: block; width: 60px; height: 3px; background: var(--accent-gold); margin: 10px auto 0; }
-    
-    /* Filters */
-    .filters-section { margin: 30px 0; }
-    .filter-group { margin-bottom: 20px; }
-    .filter-title { color: var(--accent-gold); font-size: 0.9rem; margin-bottom: 12px; font-weight: 600; }
-    .filter-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
-    .filter-btn { background: #1A1A2A; border: 1px solid rgba(255,215,0,0.3); padding: 6px 16px; border-radius: 30px; font-size: 0.75rem; cursor: pointer; transition: all 0.3s; color: #ccc; }
-    .filter-btn:hover, .filter-btn.active { background: linear-gradient(135deg, var(--accent-gold), #B8860B); color: #0A0A0A; border-color: var(--accent-gold); }
-    .language-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
-    .lang-btn { background: #1A1A2A; border: 1px solid rgba(255,215,0,0.3); padding: 5px 12px; border-radius: 30px; font-size: 0.7rem; cursor: pointer; transition: all 0.3s; color: #ccc; }
-    .lang-btn:hover, .lang-btn.active { background: var(--accent-gold); color: #0A0A0A; }
-    
-    /* Movie Grid */
-    .movie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin: 40px 0; }
+    .movie-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin: 40px 0; justify-content: center; }
     .movie-card {
       background: #111111;
       border-radius: 20px;
       overflow: hidden;
       transition: transform 0.3s, box-shadow 0.3s;
       border: 1px solid rgba(255,215,0,0.3);
-      position: relative;
+      max-width: 280px;
+      margin: 0 auto;
+      width: 100%;
     }
     .movie-card:hover { transform: translateY(-8px); border-color: var(--accent-gold); box-shadow: 0 0 20px rgba(255,215,0,0.2); }
     .movie-poster { height: 400px; background-size: cover; background-position: center; position: relative; }
     .movie-year { position: absolute; bottom: 10px; left: 10px; background: rgba(0,0,0,0.7); padding: 4px 10px; border-radius: 20px; font-size: 0.7rem; border: 1px solid var(--accent-gold); color: var(--accent-gold); }
     .movie-quality { position: absolute; top: 10px; right: 10px; background: var(--accent-gold); color: #0A0A0A; padding: 3px 8px; border-radius: 15px; font-size: 0.7rem; font-weight: bold; }
-    .imdb-rating { position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.7); padding: 4px 8px; border-radius: 20px; font-size: 0.7rem; color: #FFD700; }
     .movie-info { padding: 15px; }
     .movie-info h3 { font-size: 1rem; margin-bottom: 5px; color: var(--accent-gold); }
     .movie-category { font-size: 0.7rem; color: #aaa; margin-bottom: 8px; }
-    .movie-info p { font-size: 0.8rem; color: #ccc; line-height: 1.4; margin-bottom: 12px; }
-    .movie-actions { display: flex; gap: 10px; margin-top: 10px; }
-    .trailer-btn { background: rgba(255,215,0,0.15); border: 1px solid rgba(255,215,0,0.3); padding: 6px 12px; border-radius: 30px; font-size: 0.7rem; cursor: pointer; transition: all 0.3s; color: var(--accent-gold); text-decoration: none; display: inline-block; text-align: center; flex: 1; }
-    .trailer-btn:hover { background: rgba(255,215,0,0.3); }
-    
-    /* Country Request Section */
-    .country-requests { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 40px 0; }
-    .country-card { background: #111111; border-radius: 16px; padding: 20px; text-align: center; border: 1px solid rgba(255,215,0,0.3); transition: all 0.3s; }
-    .country-card:hover { transform: translateY(-5px); border-color: var(--accent-gold); }
-    .country-card i { font-size: 2rem; color: var(--accent-gold); margin-bottom: 10px; }
-    .country-card h4 { font-size: 1rem; margin-bottom: 8px; color: var(--accent-gold); }
-    .country-card p { font-size: 0.7rem; color: #aaa; }
-    
-    /* Coming Soon */
-    .coming-soon-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 25px; margin: 40px 0; }
-    .coming-card { background: #111111; border-radius: 16px; padding: 20px; text-align: center; border: 1px solid rgba(255,215,0,0.3); transition: all 0.3s; }
-    .coming-card:hover { transform: translateY(-5px); border-color: var(--accent-gold); }
-    .coming-card i { font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 15px; }
-    .coming-card h4 { font-size: 1rem; margin-bottom: 8px; color: var(--accent-gold); }
-    .coming-card p { font-size: 0.7rem; color: #aaa; }
-    .release-date { color: var(--accent-gold); font-size: 0.7rem; margin-top: 10px; font-weight: bold; }
-    
-    /* Stats Banner */
+    .movie-info p { font-size: 0.8rem; color: #ccc; line-height: 1.4; }
+    .country-flags { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 25px 0; }
+    .country-flag { background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); padding: 6px 14px; border-radius: 40px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--accent-gold); display: flex; align-items: center; gap: 6px; color: var(--accent-gold); }
     .stats-banner { background: linear-gradient(135deg, #111111, #1A1A1A); border-radius: 20px; padding: 25px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,215,0,0.3); }
     .stats-items { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
     .stat-item { text-align: center; }
     .stat-number { font-size: 1.8rem; font-weight: bold; color: var(--accent-gold); }
-    
-    /* Features */
+    .region-categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
+    .region-cat-card { background: #111111; border-radius: 20px; padding: 25px; text-align: center; border: 1px solid rgba(255,215,0,0.3); transition: all 0.3s; }
+    .region-cat-card:hover { transform: translateY(-5px); border-color: var(--accent-gold); }
+    .region-cat-card i { font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px; }
+    .region-cat-card h4 { font-size: 1.2rem; margin-bottom: 10px; color: var(--accent-gold); }
+    .region-cat-card p { color: #ccc; font-size: 0.85rem; }
     .features-highlight { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
     .feature-box { background: #111111; border-radius: 20px; padding: 25px; text-align: center; border: 1px solid rgba(255,215,0,0.3); transition: all 0.3s; }
     .feature-box:hover { transform: translateY(-5px); border-color: var(--accent-gold); }
     .feature-box i { font-size: 2rem; color: var(--accent-gold); margin-bottom: 15px; }
     .feature-box h4 { font-size: 1.1rem; margin-bottom: 10px; color: var(--accent-gold); }
     .feature-box p { color: #ccc; font-size: 0.8rem; }
-    
-    .country-flags { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin: 25px 0; }
-    .country-flag { background: rgba(0,0,0,0.6); backdrop-filter: blur(8px); padding: 6px 14px; border-radius: 40px; font-size: 0.75rem; font-weight: 600; border: 1px solid var(--accent-gold); display: flex; align-items: center; gap: 6px; color: var(--accent-gold); }
-    
     footer { padding: 40px 0 25px; text-align: center; background: #050505; border-top: 1px solid var(--accent-gold); margin-top: 50px; }
     .footer-links { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-bottom: 20px; }
     .footer-links a { color: #aaa; text-decoration: none; font-size: 0.7rem; transition: color 0.3s; }
@@ -155,6 +123,7 @@
       <a href="offers.html">Offers</a>
       <a href="terms.html">Terms</a>
       <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refund</a>
     </div>
     <div class="cta-buttons">
       <button class="btn-primary" onclick="window.open('https://wa.me/212600160196?text=I%20want%20a%20free%20trial%20from%20SOLARA%20TV', '_blank')">Free Trial</button>
@@ -195,166 +164,13 @@
     </div>
   </div>
 
-  <!-- Filter by Genre -->
-  <div class="filters-section">
-    <div class="filter-group">
-      <div class="filter-title">🎬 Filter by Genre</div>
-      <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="action">Action</button>
-        <button class="filter-btn" data-filter="sci-fi">Sci-Fi</button>
-        <button class="filter-btn" data-filter="adventure">Adventure</button>
-      </div>
-    </div>
-    <div class="filter-group">
-      <div class="filter-title">🌐 Filter by Language</div>
-      <div class="language-buttons">
-        <button class="lang-btn active" data-lang="all">All Languages</button>
-        <button class="lang-btn" data-lang="en">English</button>
-        <button class="lang-btn" data-lang="de">Deutsch</button>
-        <button class="lang-btn" data-lang="fr">Français</button>
-        <button class="lang-btn" data-lang="nl">Nederlands</button>
-        <button class="lang-btn" data-lang="ar">العربية</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Movies Grid -->
+  <!-- Latest Releases Grid - 4 Movies Only -->
   <h2 class="section-title">🔥 Must-Watch Premieres</h2>
-  <div class="movie-grid" id="movies-grid">
-    <div class="movie-card" data-genre="action" data-lang="en">
-      <div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg');">
-        <div class="movie-quality">4K UHD</div>
-        <div class="movie-year">2026</div>
-        <div class="imdb-rating">⭐ 8.7</div>
-      </div>
-      <div class="movie-info">
-        <h3>Avengers: Doomsday</h3>
-        <div class="movie-category">🇺🇸 Marvel Studios | Action</div>
-        <p>Robert Downey Jr. returns as Doctor Doom. Experience the multiverse like never before with SOLARA TV.</p>
-        <div class="movie-actions">
-          <a href="#" class="trailer-btn" onclick="alert('Trailer: Avengers Doomsday - Coming Soon to SOLARA TV'); return false;"><i class="fab fa-youtube"></i> Watch Trailer</a>
-        </div>
-      </div>
-    </div>
-    <div class="movie-card" data-genre="adventure" data-lang="en">
-      <div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg');">
-        <div class="movie-quality">4K HDR</div>
-        <div class="movie-year">2026</div>
-        <div class="imdb-rating">⭐ 8.4</div>
-      </div>
-      <div class="movie-info">
-        <h3>Spider-Man: Brand New Day</h3>
-        <div class="movie-category">🇺🇸 Marvel/Sony | Adventure</div>
-        <p>Tom Holland's journey continues. A fresh chapter unfolds in stunning quality on SOLARA TV.</p>
-        <div class="movie-actions">
-          <a href="#" class="trailer-btn" onclick="alert('Trailer: Spider-Man - Brand New Day - Coming Soon to SOLARA TV'); return false;"><i class="fab fa-youtube"></i> Watch Trailer</a>
-        </div>
-      </div>
-    </div>
-    <div class="movie-card" data-genre="sci-fi" data-lang="en">
-      <div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg');">
-        <div class="movie-quality">4K</div>
-        <div class="movie-year">2026</div>
-        <div class="imdb-rating">⭐ 8.9</div>
-      </div>
-      <div class="movie-info">
-        <h3>Dune: Messiah</h3>
-        <div class="movie-category">🇺🇸 Warner Bros | Sci-Fi</div>
-        <p>The epic conclusion of Denis Villeneuve's masterpiece. Witness the prophecy fulfilled on SOLARA TV.</p>
-        <div class="movie-actions">
-          <a href="#" class="trailer-btn" onclick="alert('Trailer: Dune Messiah - Coming Soon to SOLARA TV'); return false;"><i class="fab fa-youtube"></i> Watch Trailer</a>
-        </div>
-      </div>
-    </div>
-    <div class="movie-card" data-genre="action" data-lang="en">
-      <div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg');">
-        <div class="movie-quality">4K HDR</div>
-        <div class="movie-year">2026</div>
-        <div class="imdb-rating">⭐ 8.5</div>
-      </div>
-      <div class="movie-info">
-        <h3>John Wick: Chapter 4</h3>
-        <div class="movie-category">🇺🇸 Hollywood | Action</div>
-        <p>Keanu Reeves delivers the ultimate action experience. Pure adrenaline on SOLARA TV.</p>
-        <div class="movie-actions">
-          <a href="#" class="trailer-btn" onclick="alert('Trailer: John Wick Chapter 4 - Coming Soon to SOLARA TV'); return false;"><i class="fab fa-youtube"></i> Watch Trailer</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Most Watched Section -->
-  <h2 class="section-title">📊 Most Watched on SOLARA TV</h2>
   <div class="movie-grid">
-    <div class="movie-card">
-      <div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj8XjjuF5J.jpg');">
-        <div class="movie-quality">4K</div>
-        <div class="movie-year">2023</div>
-        <div class="imdb-rating">⭐ 8.8</div>
-      </div>
-      <div class="movie-info">
-        <h3>Spider-Man: Across the Spider-Verse</h3>
-        <div class="movie-category">🇺🇸 Sony | Animation</div>
-        <p>Groundbreaking animation and storytelling. One of the most-watched movies on SOLARA TV.</p>
-      </div>
-    </div>
-    <div class="movie-card">
-      <div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/4q2NNj4S5dG2RLF9CpXmZgmfu0x.jpg');">
-        <div class="movie-quality">4K</div>
-        <div class="movie-year">2023</div>
-        <div class="imdb-rating">⭐ 8.3</div>
-      </div>
-      <div class="movie-info">
-        <h3>Mission: Impossible - Dead Reckoning</h3>
-        <div class="movie-category">🇺🇸 Paramount | Action</div>
-        <p>Tom Cruise delivers impossible stunts. A fan favorite on SOLARA TV.</p>
-      </div>
-    </div>
-    <div class="movie-card">
-      <div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/kQs6lheLQlZ2oW3FkgYxUftNniZ.jpg');">
-        <div class="movie-quality">HD</div>
-        <div class="movie-year">2023</div>
-        <div class="imdb-rating">⭐ 8.1</div>
-      </div>
-      <div class="movie-info">
-        <h3>Anatomy of a Fall</h3>
-        <div class="movie-category">🇫🇷 France | Drama</div>
-        <p>Palme d'Or winner. Top-rated French cinema on SOLARA TV.</p>
-      </div>
-    </div>
-    <div class="movie-card">
-      <div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/hkxxMIGaiCTmrEArbZcJYqatdMp.jpg');">
-        <div class="movie-quality">HD</div>
-        <div class="movie-year">2023</div>
-        <div class="imdb-rating">⭐ 7.9</div>
-      </div>
-      <div class="movie-info">
-        <h3>The Zone of Interest</h3>
-        <div class="movie-category">🇩🇪 Germany | Drama</div>
-        <p>Award-winning German cinema. Highly requested on SOLARA TV.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Coming Soon Section -->
-  <h2 class="section-title">📅 Coming Soon to SOLARA TV</h2>
-  <div class="coming-soon-grid">
-    <div class="coming-card"><i class="fas fa-film"></i><h4>Superman: Legacy</h4><p>The new Superman film arrives on SOLARA TV</p><div class="release-date">July 2026</div></div>
-    <div class="coming-card"><i class="fas fa-film"></i><h4>Fantastic Four</h4><p>Marvel's First Family joins SOLARA TV</p><div class="release-date">August 2026</div></div>
-    <div class="coming-card"><i class="fas fa-film"></i><h4>Gladiator 2</h4><p>The epic sequel coming to SOLARA TV</p><div class="release-date">September 2026</div></div>
-    <div class="coming-card"><i class="fas fa-film"></i><h4>Joker: Folie à Deux</h4><p>Most anticipated release on SOLARA TV</p><div class="release-date">October 2026</div></div>
-  </div>
-
-  <!-- Most Requested by Country -->
-  <h2 class="section-title">🌍 Most Requested by Country on SOLARA TV</h2>
-  <div class="country-requests">
-    <div class="country-card"><i class="fas fa-flag-gb"></i><h4>🇬🇧 United Kingdom</h4><p>James Bond 2025, Paddington 3, Wicked</p></div>
-    <div class="country-card"><i class="fas fa-flag-de"></i><h4>🇩🇪 Germany</h4><p>Das Boot, Im Westen nichts Neues</p></div>
-    <div class="country-card"><i class="fas fa-flag-fr"></i><h4>🇫🇷 France</h4><p>The Three Musketeers, Les Misérables</p></div>
-    <div class="country-card"><i class="fas fa-flag-nl"></i><h4>🇳🇱 Netherlands</h4><p>Michiel de Ruyter, Bon Bini Holland</p></div>
-    <div class="country-card"><i class="fas fa-flag-au"></i><h4>🇦🇺 Australia</h4><p>The Royal Hotel, Furiosa, Talk to Me</p></div>
-    <div class="country-card"><i class="fas fa-flag-ae"></i><h4>🇦🇪 UAE & GCC</h4><p>Al Hob, Kandahar, Route 10</p></div>
+    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg');"><div class="movie-quality">4K UHD</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Avengers: Doomsday</h3><div class="movie-category">🇺🇸 Marvel Studios | Action</div><p>Robert Downey Jr. returns as Doctor Doom. Experience the multiverse like never before with SOLARA TV.</p></div></div>
+    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg');"><div class="movie-quality">4K HDR</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Spider-Man: Brand New Day</h3><div class="movie-category">🇺🇸 Marvel/Sony | Adventure</div><p>Tom Holland's journey continues. A fresh chapter unfolds in stunning quality on SOLARA TV.</p></div></div>
+    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg');"><div class="movie-quality">4K</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>Dune: Messiah</h3><div class="movie-category">🇺🇸 Warner Bros | Sci-Fi</div><p>The epic conclusion of Denis Villeneuve's masterpiece. Witness the prophecy fulfilled on SOLARA TV.</p></div></div>
+    <div class="movie-card"><div class="movie-poster" style="background-image: url('https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg');"><div class="movie-quality">4K HDR</div><div class="movie-year">2026</div></div><div class="movie-info"><h3>John Wick: Chapter 4</h3><div class="movie-category">🇺🇸 Hollywood | Action</div><p>Keanu Reeves delivers the ultimate action experience. Pure adrenaline on SOLARA TV.</p></div></div>
   </div>
 
   <!-- Why SOLARA TV Movies is the Best Choice -->
@@ -366,6 +182,19 @@
     <div class="feature-box"><i class="fas fa-sync-alt"></i><h4>Daily Updates</h4><p>New movies added every day—always fresh content</p></div>
     <div class="feature-box"><i class="fas fa-language"></i><h4>Multi-Language</h4><p>Audio & subtitles in English, Dutch, German, French, Italian, Spanish, Arabic</p></div>
     <div class="feature-box"><i class="fas fa-mobile-alt"></i><h4>All Devices</h4><p>Smart TV, Android, iOS, Firestick, PC, MAG boxes</p></div>
+  </div>
+
+  <!-- Browse by Region -->
+  <h2 class="section-title">🎬 Discover Cinema by Region</h2>
+  <div class="region-categories">
+    <div class="region-cat-card"><i class="fas fa-flag-gb"></i><h4>🇬🇧 British Cinema</h4><p>From iconic BBC productions to groundbreaking independent films—experience the finest of UK storytelling.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-nl"></i><h4>🇳🇱 Dutch Cinema</h4><p>Immerse yourself in Nederlandse films with authentic Dutch audio. NPO productions and beloved classics await.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-usa"></i><h4>🇺🇸 Hollywood</h4><p>The world's biggest blockbusters. Marvel, DC, Disney, and all the hits—streaming now in spectacular quality.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-au"></i><h4>🇦🇺 Australian Cinema</h4><p>Discover the vibrant world of Australian filmmaking. Local stories, unique voices, and cinematic treasures.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-de"></i><h4>🇩🇪 German Cinema</h4><p>Deutsche Filme at their finest. From ARD productions to contemporary masterpieces with English subtitles.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-fr"></i><h4>🇫🇷 French Cinema</h4><p>Cinéma français in all its glory. Canal+ productions, New Wave classics, and modern hits with multilingual audio.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-it"></i><h4>🇮🇹 Italian Cinema</h4><p>Cinema italiano from RAI and Mediaset. Neorealism classics and contemporary gems with English subtitles.</p></div>
+    <div class="region-cat-card"><i class="fas fa-flag-es"></i><h4>🇪🇸 Spanish Cinema</h4><p>Cine español from TVE and beyond. Latin American films and European masterpieces in one place.</p></div>
   </div>
 
   <!-- CTA Section -->
@@ -381,7 +210,7 @@
     <div class="footer-links">
       <a href="index.html">Home</a><a href="movies.html">Movies</a><a href="channels.html">Channels</a><a href="pricing.html">Pricing</a>
       <a href="blog.html">Blog</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a href="about.html">About</a>
-      <a href="offers.html">Offers</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a>
+      <a href="offers.html">Offers</a><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="refund.html">Refund</a>
     </div>
     <div class="payment-methods"><i class="fab fa-cc-visa"></i><i class="fab fa-cc-mastercard"></i><i class="fab fa-cc-paypal"></i><i class="fab fa-ideal"></i><i class="fab fa-bancontact"></i></div>
     <p style="margin: 20px 0;">© 2026 SOLARA TV — Best IPTV Movie Service. All rights reserved.</p>
@@ -389,46 +218,5 @@
     <a href="https://wa.me/212600160196" class="whatsapp-float"><i class="fab fa-whatsapp"></i></a>
   </div>
 </footer>
-
-<script>
-  // Filter by Genre
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const movieCards = document.querySelectorAll('#movies-grid .movie-card');
-  
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const filter = btn.dataset.filter;
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      
-      movieCards.forEach(card => {
-        if (filter === 'all' || card.dataset.genre === filter) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-  
-  // Filter by Language
-  const langBtns = document.querySelectorAll('.lang-btn');
-  
-  langBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const lang = btn.dataset.lang;
-      langBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      
-      movieCards.forEach(card => {
-        if (lang === 'all' || card.dataset.lang === lang) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-</script>
 </body>
 </html>

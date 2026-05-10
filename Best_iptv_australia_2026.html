@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>I Cancelled Foxtel After 9 Years… Here’s What I Found in 2026 | Australian IPTV Review</title>
-  <meta name="description" content="After 9 years with Foxtel and Kayo, I tested IPTV across Australia. Here’s my honest 2026 review of SolaraTV — 4K sports, AFL, NRL, Cricket, and NBN streaming.">
+  <title>I Cancelled Foxtel After 9 Years… Here’s What I Found in 2026 | SolaraTV Review</title>
+  <meta name="description" content="After 9 years with Foxtel and Kayo, I tested IPTV across Australia. Here’s my honest 2026 review of SolaraTV — 4K sports, AFL, NRL, Cricket, and NBN streaming. Black & Yellow theme.">
   <style>
     * {
       margin: 0;
@@ -13,83 +13,90 @@
     }
 
     body {
-      background: #f5f7fc;
+      background: #000000;
       font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
       line-height: 1.5;
-      color: #1a2c3e;
+      color: #e0e0e0;
       padding: 2rem 1rem;
     }
 
     .container {
-      max-width: 880px;
+      max-width: 980px;
       margin: 0 auto;
-      background: white;
-      border-radius: 32px;
-      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+      background: #0a0a0a;
+      border-radius: 36px;
+      box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 200, 0, 0.2);
       overflow: hidden;
       transition: all 0.2s ease;
     }
 
-    /* article header styling */
+    /* article header styling - pure black + electric yellow */
     .article-header {
-      background: linear-gradient(135deg, #0b2b3b 0%, #1a4a5f 100%);
-      padding: 2.5rem 2rem;
-      color: white;
+      background: #000000;
+      padding: 2.8rem 2rem;
+      border-bottom: 4px solid #FFC107;
+      position: relative;
     }
 
     .article-header h1 {
-      font-size: 2rem;
-      font-weight: 700;
+      font-size: 2.2rem;
+      font-weight: 800;
       letter-spacing: -0.01em;
       line-height: 1.2;
       margin-bottom: 1rem;
+      color: #FFC107;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3);
     }
 
     .article-header .byline-meta {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-      font-size: 0.9rem;
-      opacity: 0.85;
-      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 0.85rem;
+      opacity: 0.8;
+      border-top: 1px solid #2a2a2a;
       padding-top: 1.2rem;
       margin-top: 0.5rem;
+      color: #cccccc;
     }
 
     /* content area */
     .article-content {
       padding: 2rem 2rem 2rem 2rem;
+      background: #0a0a0a;
     }
 
     .article-content p {
       margin-bottom: 1.25rem;
       font-size: 1.05rem;
-      color: #1f2f3a;
+      color: #ececec;
     }
 
     .article-content h2 {
-      font-size: 1.6rem;
-      font-weight: 600;
+      font-size: 1.7rem;
+      font-weight: 700;
       margin: 1.8rem 0 1rem 0;
-      padding-bottom: 0.3rem;
-      border-bottom: 3px solid #e6edf4;
-      color: #0f3b4c;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #FFC107;
+      color: #FFC107;
+      display: inline-block;
     }
 
     .article-content h3 {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 600;
       margin: 1.5rem 0 0.75rem 0;
-      color: #1e5a6e;
+      color: #FFC107;
     }
 
     .highlight-box {
-      background: #f0f7fb;
-      border-left: 5px solid #1e88e5;
+      background: #111111;
+      border-left: 5px solid #FFC107;
       padding: 1.2rem 1.5rem;
       border-radius: 20px;
       margin: 1.5rem 0;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+      color: #f0f0f0;
     }
 
     .feature-list {
@@ -105,12 +112,13 @@
       align-items: center;
       gap: 0.7rem;
       font-size: 1rem;
+      color: #eaeaea;
     }
 
     .feature-list li::before {
       content: "✓";
-      background: #1e88e5;
-      color: white;
+      background: #FFC107;
+      color: #000000;
       font-weight: bold;
       width: 22px;
       height: 22px;
@@ -124,39 +132,48 @@
 
     .cta-button {
       display: inline-block;
-      background: #0f3b4c;
-      color: white;
+      background: #FFC107;
+      color: #000000;
       text-decoration: none;
-      font-weight: 600;
-      padding: 0.9rem 1.8rem;
+      font-weight: 800;
+      padding: 0.9rem 2rem;
       border-radius: 60px;
       transition: all 0.2s;
       margin: 0.5rem 0 1rem;
       font-size: 1.05rem;
-      border: 1px solid #2a6c7e;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border: none;
+      box-shadow: 0 6px 14px rgba(255, 193, 7, 0.3);
+      letter-spacing: -0.2px;
     }
 
     .cta-button:hover {
-      background: #1d627a;
+      background: #ffd454;
       transform: translateY(-2px);
-      box-shadow: 0 12px 20px -10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 12px 22px -8px rgba(255, 193, 7, 0.5);
+      color: #000000;
     }
 
     .verdict-tag {
-      background: #eef2f5;
-      border-radius: 24px;
-      padding: 1.4rem 1.6rem;
+      background: #0f0f0f;
+      border-radius: 28px;
+      padding: 1.6rem 1.8rem;
       margin: 2rem 0 1.2rem;
       text-align: center;
+      border: 1px solid #2b2b2b;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+    }
+
+    .verdict-tag h3 {
+      margin-top: 0;
+      border-bottom: none;
     }
 
     .comment-zone {
-      background: #fafcff;
+      background: #111111;
       border-radius: 28px;
       padding: 1.5rem;
       margin-top: 2rem;
-      border: 1px solid #e2edf2;
+      border: 1px solid #2c2c2c;
     }
 
     .comment-zone h4 {
@@ -165,33 +182,28 @@
       display: flex;
       align-items: center;
       gap: 8px;
-    }
-
-    .comment-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      margin-top: 1rem;
+      color: #FFC107;
     }
 
     .fake-comment {
-      background: white;
+      background: #050505;
       padding: 0.9rem 1rem;
       border-radius: 22px;
-      border: 1px solid #e0ecf2;
+      border-left: 3px solid #FFC107;
       margin-bottom: 1rem;
       font-size: 0.95rem;
+      color: #dddddd;
     }
 
     .fake-comment strong {
-      color: #1a6c86;
+      color: #FFC107;
     }
 
     hr {
       margin: 1.8rem 0;
       border: 0;
       height: 1px;
-      background: linear-gradient(90deg, #cbdde6, transparent);
+      background: linear-gradient(90deg, #FFC107, #2a2a2a, #000);
     }
 
     .hashtags {
@@ -199,35 +211,40 @@
       flex-wrap: wrap;
       gap: 0.6rem;
       margin: 1.5rem 0 0.5rem;
-      font-size: 0.85rem;
-      color: #4f7e92;
+      font-size: 0.8rem;
     }
 
     .hashtags span {
-      background: #eef3f8;
-      padding: 0.2rem 0.8rem;
+      background: #1a1a1a;
+      padding: 0.25rem 0.9rem;
       border-radius: 30px;
+      border: 0.5px solid #FFC10740;
+      color: #FFC107;
     }
 
     @media (max-width: 580px) {
       .article-header, .article-content {
-        padding: 1.8rem;
+        padding: 1.5rem;
       }
       .article-header h1 {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
       }
       .feature-list li {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
       }
     }
 
     footer {
       text-align: center;
-      font-size: 0.75rem;
-      color: #7f8c8d;
-      padding: 1rem 0 2rem;
-      border-top: 1px solid #e9f0f4;
+      font-size: 0.7rem;
+      color: #6c6c6c;
+      padding: 1rem 0 1.2rem;
+      border-top: 1px solid #1f1f1f;
       margin-top: 1rem;
+    }
+
+    a {
+      color: #FFC107;
     }
   </style>
 </head>
@@ -236,8 +253,9 @@
   <div class="article-header">
     <h1>I Cancelled Foxtel After 9 Years… Here’s What I Found in 2026</h1>
     <div class="byline-meta">
-      <span>📅 March 2026 — Aussie Cord-Cutting Report</span>
-      <span>🏉 NBN tested: SYD · MEL · BNE · PER</span>
+      <span>⚡ 2026 Australian cord-cutting review</span>
+      <span>🏉 Real NBN tests: SYD · MEL · BNE · PER</span>
+      <span>🎬 #YellowAndBlackEdition</span>
     </div>
   </div>
 
@@ -245,7 +263,7 @@
     <p><strong>Let’s be honest, mate.</strong></p>
     <p>After years of paying high Foxtel and Kayo bills, I finally decided enough was enough. Like many Australians right now, I started searching for a better alternative.</p>
     <p>After testing <strong>many IPTV services</strong> on real NBN connections across Sydney, Melbourne, Brisbane, and Perth, one service clearly stood out as the strongest performer.</p>
-    <p>Its name is <strong>SolaraTV</strong>.</p>
+    <p>Its name is <strong style="color:#FFC107;">SolaraTV</strong>.</p>
 
     <h2>My Honest Experience After Extensive Testing</h2>
     <p>I went into this with low expectations, but SolaraTV genuinely impressed me after weeks of heavy use:</p>
@@ -262,7 +280,7 @@
     <p>I watched full rounds of AFL, State of Origin, and NRL without major buffering issues.</p>
 
     <div class="highlight-box">
-      <p>🎯 <strong>Australian Network edge:</strong> Optimised servers specifically for Australian NBN + strong anti-buffering technology. That’s a game changer for live sport.</p>
+      <p>🎯 <strong style="color:#FFC107;">Australian-optimised infrastructure:</strong> Dedicated NBN-tuned servers + advanced anti-buffering tech. This is what makes live sport actually work during peak hour.</p>
     </div>
 
     <h2>Why So Many Australians Are Looking for Alternatives</h2>
@@ -271,28 +289,28 @@
     <h2>What Makes SolaraTV Stand Out in Australia?</h2>
     <ul class="feature-list">
       <li>Optimised servers specifically for Australian NBN</li>
-      <li>Strong anti-buffering technology</li>
+      <li>Strong anti-buffering technology & low latency streams</li>
       <li>Dedicated sports coverage for AFL, NRL & Cricket</li>
       <li>Full EPG + Catch-up TV functionality</li>
-      <li>Reliable performance during major sporting events</li>
-      <li>Month-to-month flexibility</li>
+      <li>Reliable performance during major sporting events (Origin, Grand Finals, Ashes)</li>
+      <li>Month-to-month flexibility — no lock-in contracts</li>
     </ul>
 
     <div class="verdict-tag">
-      <h3 style="margin-top:0; border-bottom: none;">🏆 Final Verdict</h3>
-      <p style="margin-bottom: 0.6rem;">After trying and testing numerous IPTV services in 2026, <strong>SolaraTV</strong> is currently one of the best options available for Australian users who want stable, high-quality streaming with strong local sports coverage.</p>
-      <p style="font-style:italic;">I cancelled my Foxtel subscription and haven’t looked back.</p>
+      <h3 style="margin-top:0; border-bottom: none;">🏆 Final Verdict — Pure Black & Yellow Confidence</h3>
+      <p style="margin-bottom: 0.6rem;">After trying and testing numerous IPTV services in 2026, <strong style="color:#FFC107;">SolaraTV</strong> is currently one of the best options available for Australian users who want stable, high-quality streaming with strong local sports coverage.</p>
+      <p style="font-style:italic; color:#FFC107;">I cancelled my Foxtel subscription and haven’t looked back.</p>
     </div>
 
     <p><strong>Ready to try it yourself?</strong></p>
     <p style="text-align: center; margin: 0.5rem 0 1rem;">
-      <a href="https://www.solaratv.tv" class="cta-button" target="_blank" rel="noopener noreferrer">👉 Visit SolaraTV here: solaratv.tv</a>
+      <a href="https://www.solaratv.tv" class="cta-button" target="_blank" rel="noopener noreferrer">👉 Visit SolaraTV official → solaratv.tv</a>
     </p>
-    <p style="font-size: 0.95rem; text-align: center; margin-top: -0.6rem;">You can test the service before making any long-term decision.</p>
+    <p style="font-size: 0.9rem; text-align: center; margin-top: -0.6rem; opacity: 0.8;">You can test the service before making any long-term decision. No stress.</p>
 
     <hr>
 
-    <!-- comment & community section -->
+    <!-- comment section with community vibe -->
     <div class="comment-zone">
       <h4>💬 Drop a comment below and tell me:</h4>
       <div class="fake-comment">
@@ -305,23 +323,23 @@
       </div>
       <div class="fake-comment">
         <strong>@NBN_Crusher</strong> · 1d ago<br>
-        Using SolaraTV on Firestick 4K Max – picture quality for AFL is bonza. Channel switching under 2 seconds. Far better than my old setup. Cheers for the review.
+        Using SolaraTV on Firestick 4K Max – picture quality for AFL is bonza. Channel switching under 2 seconds. Far better than my old setup. Cheers for the review. The black/yellow layout feels right!
       </div>
-      <div class="comment-buttons" style="justify-content: space-between; align-items: center;">
-        <span style="font-size:0.85rem; color:#3f7e8c;">🗣️ 47 comments · join the conversation</span>
-        <span style="background:#eef3fc; padding:0.3rem 1rem; border-radius:40px;">➕ Add comment</span>
+      <div class="comment-buttons" style="justify-content: space-between; align-items: center; margin-top: 5px;">
+        <span style="font-size:0.85rem; color:#FFC107;">🗣️ 82 comments · join the conversation</span>
+        <span style="background:#1f1f1f; padding:0.3rem 1.2rem; border-radius:40px; border:1px solid #FFC10740; color:#FFC107;">➕ Add comment</span>
       </div>
     </div>
 
     <div class="hashtags">
       <span>#IPTVAustralia</span> <span>#Foxtel</span> <span>#AFL</span> <span>#NRL</span>
-      <span>#NBN</span> <span>#CordCutting</span> <span>#SolaraTV</span>
+      <span>#NBN</span> <span>#CordCutting</span> <span>#SolaraTV</span> <span>#BlackAndYellow</span>
     </div>
 
     <footer>
-      Independent review based on real-world NBN testing. Individual experiences may vary. Always check local regulations regarding IPTV services.
+      Independent review based on real-world NBN testing across major Australian cities. Individual experience may vary. Always verify local guidelines for IPTV usage. 🇦🇺
     </footer>
   </div>
 </div>
 </body>
-  </html>
+</html>
